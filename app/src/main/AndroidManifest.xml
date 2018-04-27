@@ -25,10 +25,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Jugar" />
         <activity android:name=".Ranking" />
         <activity android:name=".Ajustes" />
         <activity android:name=".Acerca"></activity>
+
+        <activity android:name=".Jugar"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
     </application>
 
 </manifest>
