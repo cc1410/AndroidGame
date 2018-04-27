@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.juanelberto.menuprincipal.Ajustes">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageButton
+        android:id="@+id/btnSelectPhoto"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_toStartOf="@+id/btnTakePhoto"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <ImageButton
+        android:id="@+id/btnTakePhoto"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/edFirstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:contentDescription="Firstname"
+        android:ems="10"
+        android:hint="Firstname"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edLastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edFirstname"
+        android:contentDescription="Lastname"
+        android:ems="10"
+        android:hint="Lastname"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>
